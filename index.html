@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <style>
+    /* Universal Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfbfbf; 
+    color: #333;
+}
+
+/* --- Header / Navigation Bar Styling --- */
+.main-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #c6cbd4;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dbd7d7;
+    padding: 10px 15px;
+    display: block;
+    font-size: 0.9em;
+}
+
+nav ul li a:hover {
+    background-color: #e3d9d9;
+    color: #000;
+}
+
+/* --- Main Content and Background Styling --- */
+.content-section {
+    min-height: 80vh; 
+    background-image: url('https://res.cloudinary.com/demo/image/upload/v1639050000/sample-background.jpg'); /* Please replace this with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* A light overlay to make the text readable */
+.background-overlay {
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px; 
+    border-radius: 8px;
+}
+
+/* --- Three Columns Layout --- */
+.column-container {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.column-box {
+    flex: 1; 
+    min-width: 280px; 
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.column-box h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 2em;
+    color: #6a6a6a; 
+    margin-bottom: 10px;
+}
+
+.column-box p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    text-align: left; 
+}
+
+.column-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    nav ul li a {
+        padding: 5px 10px;
+    }
+    
+    .column-container {
+        flex-direction: column;
+    }
+    .column-box {
+        min-width: 100%;
+    }
+}
+ </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">⚡ UPPER</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home </a></li> 
+                <li><a href="#">First Gallery</a></li>
+                <li><a href="#">Second</a></li>
+                <li><a href="#">Third Grid</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        
+        <div class="background-overlay">
+            
+            <div class="column-container">
+
+                <div class="column-box">
+                    <i class="fas fa-leaf icon"></i>
+                    <h3>Hello Guest</h3>
+                    <p>UPPER HTML Template contains 3 different galleries for pages. Please check <a href="#">motion video backgrounds</a>. Feel free to download and use web templates from templatemo.</p>
+                </div>
+
+                <div class="column-box">
+                    <i class="fas fa-bicycle icon"></i>
+                    <h3>Welcome!</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, deserunt. Repellat recusandae ad deleniti dignissimos numquam, impedit perspiciatis minus dolorem. Sunt ipsa iure culpa quos necessitatibus minima delectus obcaecati ratione.!</p>
+                </div>
+
+                <div class="column-box">
+                    <i class="fas fa-plane icon"></i>
+                    <h3>Stay relaxed</h3>
+                    <p>You can easily change icons in this template. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim corporis voluptate est eligendi fugiat debitis pariatur! Rem, ex consectetur.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
+</body>
+</html>
+
